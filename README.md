@@ -3,4 +3,4 @@ Modern web with HTML and SASS.
 
 
 
-Website is not responsive mobile phones and tablets.
+Website is not responsive for mobile phones and tablets.

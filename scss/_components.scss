@@ -1,0 +1,40 @@
+.supplements {
+  background-color: #fff;
+  border-right: 3px $primary-color solid;
+
+  &_header {
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 25rem;
+    margin-left: 14rem;
+    z-index: 9999;
+  }
+}
+
+.items {
+  background-color: #fff;
+  border-right: 3px $primary-color solid;
+
+  &_header {
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 25rem;
+    margin-left: 16rem;
+    z-index: 9999;
+  }
+}
+
+.clothes {
+  background-color: #fff;
+
+  &_header {
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 25rem;
+    margin-left: 17rem;
+    z-index: 9999;
+  }
+}

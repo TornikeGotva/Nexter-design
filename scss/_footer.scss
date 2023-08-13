@@ -1,0 +1,22 @@
+.footer {
+  grid-column: 1 / span 3;
+  background-color: $tertiary-color;
+
+  &_socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  &_info {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    & p:hover {
+      color: $fourth-color;
+    }
+  }
+}

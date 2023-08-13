@@ -1,0 +1,34 @@
+// colors
+$primary-color: #00d4ff;
+$secondary-color: #272829;
+$tertiary-color: #093a79;
+$fourth-color: #b1002d;
+
+// font-family
+$primary-font-family: "Bebas Neue", sans-serif;
+
+//font-size
+$primary-font: 2rem;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $primary-font-family;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(177, 0, 45, 1) 0%,
+    rgba(9, 58, 121, 1) 66%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  min-height: 150rem;
+}

@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 45rem);
+  grid-template-rows: 9rem 70rem 60rem 30rem;
+  overflow-x: hidden;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+  grid-column: 1/4;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

@@ -1,0 +1,39 @@
+.header {
+  min-width: 134.9rem;
+  min-height: 8rem;
+  background-color: $tertiary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  &_list {
+    margin-right: 2rem;
+    display: flex;
+    gap: 5rem;
+    font-size: $primary-font;
+    text-decoration: none;
+
+    &_a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        color: $primary-color;
+        transition: all 0.3s ease-in;
+      }
+
+      &:focus {
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  &_logo {
+    max-width: 25rem;
+    padding: 2rem;
+    cursor: pointer;
+  }
+}

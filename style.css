@@ -1,0 +1,256 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(177, 0, 45) 0%, rgb(9, 58, 121) 66%, rgb(2, 0, 36) 100%);
+  min-height: 150rem;
+}
+
+.header {
+  min-width: 134.9rem;
+  min-height: 8rem;
+  background-color: #093a79;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.header_list {
+  margin-right: 2rem;
+  display: flex;
+  gap: 5rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.header_list_a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+.header_list_a:hover {
+  color: #00d4ff;
+  transition: all 0.3s ease-in;
+}
+.header_list_a:focus {
+  transform: translateY(-2px);
+}
+.header_logo {
+  max-width: 25rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.supplements {
+  background-color: #fff;
+  border-right: 3px #00d4ff solid;
+}
+.supplements_header {
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 25rem;
+  margin-left: 14rem;
+  z-index: 9999;
+}
+
+.items {
+  background-color: #fff;
+  border-right: 3px #00d4ff solid;
+}
+.items_header {
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 25rem;
+  margin-left: 16rem;
+  z-index: 9999;
+}
+
+.clothes {
+  background-color: #fff;
+}
+.clothes_header {
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 25rem;
+  margin-left: 17rem;
+  z-index: 9999;
+}
+
+.footer {
+  grid-column: 1/span 3;
+  background-color: #093a79;
+}
+.footer_socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.footer_info {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+.footer_info p:hover {
+  color: #b1002d;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 45rem);
+  grid-template-rows: 9rem 70rem 60rem 30rem;
+  overflow-x: hidden;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+  grid-column: 1/4;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.supplements_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 55%;
+  overflow-y: hidden;
+}
+.supplements_img:hover {
+  filter: blur(2px);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.items_img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 55%;
+  overflow-x: hidden;
+}
+.items_img:hover {
+  filter: blur(2px);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.clothes_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 65.5%;
+}
+.clothes_img:hover {
+  filter: blur(2px);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.button {
+  position: absolute;
+  margin-top: 50rem;
+  margin-left: 16rem;
+  z-index: 9999;
+  border: none;
+  min-height: 5rem;
+  min-width: 10rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  background-color: #00d4ff;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #b1002d;
+  transition: all 0.3s ease;
+}
+
+.pagination {
+  grid-column: 1/span 3;
+  padding: 5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.pagination_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90rem;
+  background-color: #00d4ff;
+  margin-top: 2rem;
+}
+.pagination_info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  align-self: start;
+  padding: 7rem;
+  gap: 7rem;
+  margin-left: 50rem;
+}
+.pagination_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin-top: 8rem;
+}
+.pagination_img {
+  border-radius: 2px;
+  max-height: 30rem;
+  position: absolute;
+  margin-right: 70rem;
+  margin-bottom: 53rem;
+}
+.pagination_user {
+  font-size: 3rem;
+}
+.pagination_text {
+  font-size: 2rem;
+}
+.pagination_left {
+  position: absolute;
+  margin-bottom: 45rem;
+  margin-right: 120rem;
+  max-height: 4rem;
+  max-width: 4rem;
+  border: 1px black solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pagination_left:hover {
+  stroke: #b1002d;
+  border: 1px #b1002d solid;
+}
+.pagination_right {
+  position: absolute;
+  margin-bottom: 45rem;
+  margin-left: 120rem;
+  max-height: 4rem;
+  max-width: 4rem;
+  border: 1px black solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pagination_right:hover {
+  stroke: #b1002d;
+  border: 1px #b1002d solid;
+}/*# sourceMappingURL=style.css.map */

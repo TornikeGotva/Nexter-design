@@ -1,0 +1,84 @@
+.pagination {
+  grid-column: 1 / span 3;
+  padding: 5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  margin-bottom: 3rem;
+
+  &_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90rem;
+    background-color: $primary-color;
+    margin-top: 2rem;
+  }
+
+  &_info {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    align-self: start;
+    padding: 7rem;
+    gap: 7rem;
+    margin-left: 50rem;
+  }
+
+  &_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-top: 8rem;
+  }
+
+  &_img {
+    border-radius: 2px;
+    max-height: 30rem;
+    position: absolute;
+    margin-right: 70rem;
+    margin-bottom: 53rem;
+  }
+
+  &_user {
+    font-size: 3rem;
+  }
+
+  &_text {
+    font-size: $primary-font;
+  }
+
+  &_left {
+    position: absolute;
+    margin-bottom: 45rem;
+    margin-right: 120rem;
+    max-height: 4rem;
+    max-width: 4rem;
+    border: 1px black solid;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      stroke: $fourth-color;
+      border: 1px $fourth-color solid;
+    }
+  }
+
+  &_right {
+    position: absolute;
+    margin-bottom: 45rem;
+    margin-left: 120rem;
+    max-height: 4rem;
+    max-width: 4rem;
+    border: 1px black solid;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      stroke: $fourth-color;
+      border: 1px $fourth-color solid;
+    }
+  }
+}
